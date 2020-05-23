@@ -1,0 +1,45 @@
+form { background-color: silver; }
+
+/* <ACCORDION> */
+.accordion-box { margin: 40px 0; }
+.accordion-btn {
+cursor: pointer;
+display: block;
+position: relative;
+width: 300px;
+padding: 4px 0;
+margin: 0 auto;
+}
+
+/* button::after { position: absolute; font-weight: 900; content: "\002B"; right: 5px; line-height: 1.1 } */
+.accordion-btn::after { position: absolute; font-weight: 900; content: "\002B"; right: 5px; line-height: 1.1 }
+.accordion-btn.is-open::after { content: "\2212" }
+.accordion-wrapper {max-height: 1200px; transition: max-height 0.1s ease-in-out; background-color: #fff; }
+.accordion-wrapper.is-close { overflow: hidden; max-height: 0; transition: max-height 0.1s ease-in-out }
+/* .accordion-wrapper { overflow: hidden; max-height: 0; transition: max-height 0.1s ease-in-out } */
+/* </ACCORDION> */
+
+.aggiungi{ cursor: pointer; color: green; }
+/* <TABLE> */
+th, td { padding: 12px; }
+input[type="submit"] { display: block; width: 300px; margin: 30px auto; }
+.separatore { width: 1400px; height: 40px; margin: auto; border-bottom: 2px dashed gray }
+.row-info { padding: 0;  display: flex; justify-content: center  }
+.table_info { width: 1200px; height: 1200px; border-collapse:collapse; border: 1px solid black; background-color: #ddd }
+.col_info { padding: 0 4px }
+.line_info { line-height: .3 }
+.col_info-one, .col_info-two, .col_info-three { padding-left: 10px; background-color: #ccc }
+.col_info-three, .col_info-two { border-top: 1px solid black }
+.col_info { border: 1px black solid; padding: 0; font-size: 15px }
+.col_info-th {  padding-left: 4px; text-align: center; background-color: #aaa; color: black }
+.col_info-td {  padding-left: 4px; background-color: #eee; }
+.col_info-empty { background-color: #ccc }
+.box_line-istruzioni { text-align: center }
+.line-istruzioni { margin: 0; font-size: 18px; font-weight: 600 }
+.line_info { line-height: 1 }
+.special-char { font-size: 20px; font-weight: bold; }
+.special-char-asterisco { font-size: 30px; font-weight: bold }
+.special-word { font-weight: bold }
+.attenzione-title { font-size: 20px }
+.attenzione { font-size: 17px }
+/* </TABLE INFO> */

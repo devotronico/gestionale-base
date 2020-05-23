@@ -1,0 +1,198 @@
+@media(min-width:0) {
+    /* <GENERAL> */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { padding: 0; margin: 0; min-height: 100%; }
+    body { padding: 0; margin: 0; min-height: 100%; background-color: #ccc; }
+    table { width: 100%; border-collapse: collapse; }
+    td, th { border: 1px solid #000; font-size: 15px; padding: 0; }
+    .document { width: 780px; margin: auto; margin-top: 0px !important; }
+    .document-section { background-color: #fff; }
+    .text-padding { padding: 2px 0; }
+    .text-center { text-align: center; }
+    /* </GENERAL> */
+
+    /* <HEAD> */
+    .img-loghi { width: 100%; margin: 0; padding: 0; }
+    .head-table-top { margin-top: 5px; }
+    .head-table-top td, .head-table-bot td { padding: 5px 0 5px 5px; }
+    .head-td.title { width: 345px; text-align: center; border: none; }
+    .head-td.title > p { font-weight: bold; display: none; }
+    .head-td.spettle {
+        border-top: 1px solid black;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+        border-bottom: none;
+    }
+    .head-td.detail { border: hidden; border-right: 1px solid black; }
+    .head-td.detail > p { font-weight: bold; font-size: 18px; margin-top: 10px; }
+    .head-td.destinatario {
+        border-top: hidden;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+    }
+    .head-td.targa { width: 40%; }
+    .head-table-bot { margin-top: 5px; border: 1px solid black; }
+    /* </HEAD> */
+
+    /* <BODY-GENERAL> */
+    .document-body { margin-top: 5px; }
+    .pagina-num { display: inline-block; margin-left: 680px; margin-bottom: 3px; }
+    .body-row-top { height: 33px; }
+    .body-row-bot { border-bottom: hidden; height: 21px; }
+    .body-row-bot td { font-size: 14px; }
+    .body-row-bot.valued td:nth-child(2) { text-align: left; padding-left: 5px; }
+    .body-row-bot:last-child { border-bottom: 1px solid #000; }
+    /* </BODY-GENERAL> */
+
+    /* <BODY-FATTURA-TOP> */
+    .fattura.body-row-top th:nth-child(1) { width: 40px; }
+    .fattura.body-row-top th:nth-child(3) { width: 40px; }
+    .fattura.body-row-top th:nth-child(4) { width: 52px; }
+    .fattura.body-row-top th:nth-child(5) { width: 62px; }
+    .fattura.body-row-top th:nth-child(6) { width: 40px; font-size: 11px; }
+    .fattura.body-row-top th:nth-child(7) { width: 80px; }
+    .fattura.body-row-top th:nth-child(8) { width: 40px; }
+    /* </BODY-FATTURA-TOP> */
+
+    /* <BODY-DDT-TOP> */
+    .ddt.body-row-top th:nth-child(1) { width: 60px; }
+    /* .ddt.body-row-top th:nth-child(2) { width: } */
+    .ddt.body-row-top th:nth-child(3) { width: 70px; }
+    .ddt.body-row-top th:nth-child(4) { width: 90px; }
+    /* </BODY-DDT-TOP> */
+
+    /* <FOOTER> */
+    .document-footer { margin-top: 5px; }
+    .footer-info { text-align: center; margin-top: 3px; }
+    .footer-info > small { display: inline-block; }
+    /* </FOOTER> */
+
+    /* <FOOTER-FATTURA> */
+    .fattura.footer-td.imponibile { border-right: hidden; padding-left:20px; }
+    .fattura.footer-td.codiceiva { border-right: hidden; }
+    .fattura.footer-td.impostaiva { border-right: hidden; padding-left: 20px;  }
+    /* .fattura.footer-td.vat {} */
+    .fattura.footer-td.totali { padding-left: 3px; font-size: 17px; }
+    .fattura.footer-td.totali > p { font-weight: bold; }
+    .fattura.footer-td.totali p:nth-child(5) { visibility: hidden; }
+    /* </FOOTER-FATTURA> */
+
+    /* <FOOTER-DDT> */
+    .ddt.footer-td { padding-left: 5px; }
+    /* .ddt.footer-td.transporto {} */
+    /* .ddt.footer-td.aspetto {} */
+    /* .ddt.footer-td.causale {} */
+    /* .ddt.footer-td.colli {} */
+    /* .ddt.footer-td.data {} */
+    /* .ddt.footer-td.firma {} */
+    /* .ddt.footer-td.vettore {} */
+    /* .ddt.footer-td.destinatario {} */
+    /* .ddt.footer-td.firmavettore {} */
+    /* </FOOTER-DDT> */
+
+    /* <BUTTON> */
+    #box-btn-option {
+        position: fixed;
+        top: 100px;
+        left: 0;
+        text-align: center;
+    }
+
+    .btn-option {
+        display: block;
+        width: 80px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        text-decoration: none;
+        -webkit-appearance: push-button;
+        padding: 1px 6px;
+        border-width: 2px;
+        border-style: outset;
+        color: initial;
+        font: 400 13.3333px Arial;
+    }
+
+    .btn-print {
+        display:block;
+        width: 80px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        padding: 1px 6px;
+        border-width: 2px;
+    }
+    /* </BUTTON> */
+    }
+    @media screen {
+        .document { height: 1400px; }
+    }
+    @media print {
+        .no-print { display: none; }
+        .document { height: 100%; }
+    }
+    @media(min-width:992px) { #box-btn-option { left: 2%; } }
+    @media(min-width:1200px) { #box-btn-option { left: 8%; } }
+    @media(min-width:1600px) { #box-btn-option { left: 20%; } }
+    /* <DEBUG-GENERAL> */
+    /* ._line_ { background-color: red !important; } */
+    /* ._line_ { border-bottom: 1px solid black; background-color: red !important; } */
+    /* .fill { border-bottom: 1px solid black; background-color: yellow !important; } */
+    /* #document-1 { background-color: yellow; } */
+    /* #document-2 { background-color: red; } */
+    /* #document-3 { background-color: blue; } */
+    /* </DEBUG-GENERAL> */
+
+    /* <DEBUG-HEAD> */
+    /* .document-head { background-color: red; } */
+    /* </DEBUG-HEAD> */
+
+    /* <DEBUG-BODY> */
+    /* .body-row-bot.valued { background-color: yellow !important; } */
+    /* .body-row-bot.space { background-color: salmon !important; } */
+    /* .body-row-bot.fill { background-color: green !important; } */
+    /* </DEBUG-BODY> */
+
+    /* <DEBUG-BODY-FATTURA> */
+    /* .fattura.prodotto { background-color: #990 !important; } */
+    /* .fattura.lotti { background-color: #980 !important; } */
+    /* .fattura.gross { background-color: #970 !important; } */
+    /* .fattura.net { background-color: #960 !important; } */
+    /* .fattura.cbm { background-color: #950 !important; } */
+    /* .fattura.hs { background-color: #940 !important; } */
+    /* .fattura.container { background-color: #930 !important; } */
+    /* .fattura.sigillo { background-color: #920 !important; } */
+    /* .fattura.advice { background-color: #910 !important; } */
+    /* .fattura.ordine { background-color: #900 !important; } */
+    /* .fattura.tot-gross { background-color: #890 !important; } */
+    /* .fattura.tot-net { background-color: #880 !important; } */
+    /* .fattura.tot-cbm { background-color: #870 !important; } */
+    /* .fattura.note { background-color: #860 !important; } */
+    /* .fattura.art8 { background-color: #850 !important; } */
+    /* .fattura.successive-modifiche { background-color: #840 !important; } */
+    /* .fattura.intento { background-color: #830 !important; } */
+    /* .fattura.banca-dati { background-color: #820 !important; } */
+    /* .fattura.banca-istituto { background-color: #810 !important; } */
+    /* .fattura.banca-indirizzo { background-color: #800 !important; } */
+    /* .fattura.banca-iban { background-color: #790 !important; } */
+    /* .fattura.banca-bic_swift { background-color: #780 !important; } */
+    /* .fattura.conai { background-color: #770 !important; } */
+    /* </DEBUG-BODY-FATTURA> */
+
+    /* <DEBUG-BODY-DDT> */
+    /* .ddt.prodotto { background-color: #790 !important; } */
+    /* .ddt.brand { background-color: #780 !important; } */
+    /* .ddt.tipobar { background-color: #770 !important; } */
+    /* .ddt.codice { background-color: #760 !important; } */
+    /* .ddt.imballaggio { background-color: #750 !important; } */
+    /* .ddt.lotti { background-color: #740 !important; } */
+    /* .ddt.ordine { background-color: #730 !important; } */
+    /* .ddt.container { background-color: #720 !important; } */
+    /* .ddt.sigilli { background-color: #710 !important; } */
+    /* .ddt.divisori { background-color: #700 !important; } */
+    /* .ddt.pedane { background-color: #690 !important; } */
+    /* .ddt.volantino { background-color: #680 !important; } */
+    /* .ddt.note { background-color: #670 !important; } */
+    /* </DEBUG-BODY-DDT> */
+
+    /* <DEBUG-FOOTER> */
+    /* .document-footer { background-color: pink; } */
+    /* </DEBUG-FOOTER> */

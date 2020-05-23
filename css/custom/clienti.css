@@ -1,0 +1,254 @@
+.col-th { background: var(--col-dark-l); }
+.txt-color-1 { color: var(--page-txt-color-2); }
+.txt-color-2 { color: var(--page-txt-color-1); }
+
+@media(min-width:1px) {
+/* <WRAPPER> */
+/* #core { background-color: silver; } */
+/* #clienti-container { background-color: #fff; } */
+.wrapper { display: flex; justify-content: center; }
+.wrapper-0 { padding: 0 0 10px 0; }
+.wrapper-1 { padding-bottom: 10px; }
+
+
+.wrapper > .section {
+    width: 320px;
+    /* background-color: #ececec; */
+    /* background-color: red; */
+  }
+
+/* </WRAPPER> */
+
+
+/* <SECTION_MODE> */
+#clienti-revise { display: none; }
+
+.box-btn-mode {
+    width: 100%;
+    display: flex;
+}
+
+.btn-mode {
+  width: 50%;
+    /* flex-grow: 1; */
+    font-size: 16px;
+}
+/* </SECTION_MODE> */
+
+
+/* <MESSAGE> */
+.message-table { border-collapse: collapse; width: 300px; font-size: 12px; }
+.message-success {  background-color: var(--col-success-l); }
+.message-error {  background-color: var(--col-danger-l); }
+.message-danger {  background-color: var(--col-danger-l); }
+th, td { padding: 8px; border: 1px solid rgba(0,0,0,.1); }
+
+.btn-box { height: 40px; position: relative; }
+
+.btn-close {
+    cursor: pointer;
+    width: 100%;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    border-radius: 0;
+    background-color: var(--col-danger-l);
+}
+
+.btn-close:hover { background-color: var(--col-danger-m); }
+.btn-close:active { position: absolute; top: 0; right: 0; }
+/* </MESSAGE> */
+
+
+/* <CLIENTI> */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.col {
+    display: flex;
+     width: 100%;
+}
+
+
+.col-th {
+    width: 30%;
+    display: flex;
+ }
+
+.col-th > p {
+    text-align: center;
+    height: 20px;
+    margin: auto;
+}
+
+.col-td {
+    display: flex;
+    width: 70%;
+    background-color: #fff;
+ }
+
+.col-td > input,
+.col-td > select {
+    width: 100%;
+}
+
+ #c-genere, #r-genere  { padding: 8px; font-size: 16px; }
+
+/* <INPUT-E-SELECT> */
+.input-create, .input-revise { width: 200px; padding: 8px; font-size: 16px; }
+.input-create:read-only, .input-revise:read-only { background-color: #ccc; }
+/* </INPUT-E-SELECT> */
+
+/* <INPUT-VALIDATE> */
+.input-create:valid { background: #36ce59 }
+.input-create:invalid { background: #e36370; }
+.input-revise:valid { background: #36ce59 }
+.input-revise:invalid { background: #e36370; }
+/* </INPUT-VALIDATE> */
+
+/* <SELECT-VALIDATE> */
+#c-genere:valid, #r-genere:valid {  background: #36ce59 }
+#c-genere:invalid, #r-genere:invalid {  background: #e36370; }
+/* </SELECT-VALIDATE> */
+
+select option[value=""] { background: #e36370; }
+select option[value="m"], select option[value="f"] { background: #36ce59; }
+
+/* <INPUT_FONT-SIZE> */
+input[type='text'],
+input[type='number'],
+input {
+font-size: 16px;
+}
+/* </INPUT_FONT-SIZE> */
+
+
+/* <BUTTON-BOT> */
+.row-btn { padding: 10px 0; }
+.col-btn { width: 100% !important; }
+.box-btn-center { width: 100%; text-align: center; }
+
+.btn-create, .btn-edit, .btn-revise, .btn-canc {
+    padding: 6px 0;
+    width: 200px;
+    margin: 5px;
+    font-size: 16px;
+}
+/* </BUTTON-BOT> */
+/* </CLIENTI> */
+}
+
+
+
+
+/********** IPHONE 6/7/8 X **********/
+@media(min-width:375px) {
+    #core {
+      width: 100%;
+      /* background-color: yellow; */
+    }
+
+    .wrapper > .section {
+      width: 100%;
+    }
+  }
+
+  /********** IPHONE 6/7/8 PLUS **********/
+  @media(min-width:414px) {
+    #core {
+      width: 100%;
+      /* background-color: pink; */
+    }
+
+    .wrapper > .section {
+      width: 100%;
+    }
+  }
+
+  @media(min-width:576px) {
+    #core {
+      padding: 20px;
+      width: 100%;
+      /* background-color: red; */
+    }
+
+    .wrapper > .section {
+      width: 100%;
+      /* background-color: blue; */
+    }
+
+    .col { width: 400px;}
+    .col-td { width: 300px; }
+    .input-create, .input-revise { width: 300px; }
+    .btn-create, .btn-edit, .btn-revise, .btn-canc { margin: 10px; }
+
+  }
+
+
+
+
+@media(min-width:768px) {
+    .row { flex-direction: column !important; }
+}
+
+
+@media(min-width:992px) {
+/* <MESSAGE> */
+.btn-close { width: 40px; }
+/* </MESSAGE> */
+
+/* .container { padding: 100px 0; } */
+.row { flex-direction: row !important; padding: 0 20px; }
+.col { width: 300px; }
+.col-td { width: 200px; }
+.input-create, .input-revise, #c-genere, #r-genere { width: 200px; }
+
+
+/* <SELECT-LIBRERIA> */
+.col-select { width: 100%; }
+.col-td-select { width: 100%; }
+/* </SELECT-LIBRERIA> */
+
+}
+
+@media(min-width:1200px) {
+    .wrapper-0 { padding: 10px 0 30px; }
+    .box-btn-mode { padding: 10px; background: none; justify-content: center; }
+    .box-btn-mode > button { width: 20%; }
+    .row { margin-bottom: 50px; }
+    .col { margin: 0 20px; width: 350px;}
+    .col-td { width: 250px; }
+    .input-create, .input-revise, #c-genere, #r-genere { width: 250px; }
+
+/* <INPUT-SELECT-VALIDATE> */
+.input-create:valid, .input-revise:valid,
+#c-genere:valid, #r-genere:valid
+{ border: 3px solid #36ce59; background: white; }
+.input-create:invalid, .input-revise:invalid,
+#c-genere:invalid, #r-genere:invalid
+{ border: 3px solid #e36370; background: white; }
+
+select option[value=""] { background: #fff; }
+select option[value="m"], select option[value="f"] { background: #fff; }
+/* </INPUT-SELECT-VALIDATE> */
+
+
+.row-btn { background: none; }
+.col-btn { width: auto !important; }
+.box-btn-center { background: none; }
+
+
+/* <SELECT-LIBRERIA> */
+/* .col-select { width: 100%; }
+.col-td-select { width: 100%; } */
+/* </SELECT-LIBRERIA> */
+
+}

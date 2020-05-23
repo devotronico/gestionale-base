@@ -1,0 +1,159 @@
+th { color: var(--page-txt-color-2); background: var(--col-dark-l); }
+td { background: var(--page-bg-color-1); }
+/* .txt-color-1 { color: var(--page-txt-color-2); } */
+/* .txt-color-2 { color: var(--page-txt-color-1); } */
+
+/* <GENERAL-1> */
+/* #core { background-color: silver; } */
+.box-btn-center { text-align: center; }
+/* </GENERAL-1> */
+
+/* <TABELLE> */
+table { border-collapse: collapse; }
+th, td { padding: 8px; border: 1px solid rgba(0, 0, 0, .1); }
+input[type="text"] { width: 200px; padding: 8px; font-size: 16px; }
+input[type="checkbox"]:checked { box-shadow: 0 0 0 3px green; }
+input:read-only { background-color: #ccc; }
+/* </TABELLE> */
+
+
+/* <WRAPPER> */
+.wrapper { display: flex; justify-content: center; }
+/* .wrapper-0 { justify-content: center; } */
+.wrapper-1 { margin-bottom: 20px; }
+/* .wrapper-2 { margin-bottom: 20px;  } */
+.wrapper-3 { flex-direction: column; }
+/* </WRAPPER> */
+
+
+/* <INDIRIZZI> */
+#clienti-table, .list-table { width: 920px; }
+.list-table td { font-size:12px; }
+
+/* 60 + 50 + 155 + 100 + 70 + 155 + 50 + 50 + 230 = 920 */
+#list-th-id { min-width: 60px; }
+#list-th-principale { min-width: 50px; font-size:10px; }
+#list-th-via { min-width: 155px; }
+#list-th-civico { min-width: 100px; }
+#list-th-cap { min-width: 70px; }
+#list-th-comune { min-width: 155px; }
+#list-th-provincia { min-width: 50px; font-size:11px; }
+#list-th-nazione { min-width: 50px; font-size:11px;}
+#list-th-azione  { min-width: 230px; }
+
+.principale, .cap, .provincia, .nazione { text-align: center; }
+
+.via, .comune {
+    width: 130px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.box-btn-list {
+    width: 210px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.list-tr:hover > td { background-color: #fff; }
+/* </INDIRIZZI> */
+
+
+/* <CLIENTI> */
+/* <VALIDATE> */
+.cliente-input:valid { background: var(--col-success-l); }
+.cliente-input:invalid { background: var(--col-danger-l); }
+.cliente-input:required { 
+    /* background: blue; */
+    border-color: yellow;
+}
+/* </VALIDATE> */
+
+#genere { width: 200px; padding: 8px; font-size: 16px; }
+.btn-edit-cliente, .btn-save-cliente, .btn-del-cliente { width: 200px; margin: 20px auto; font-size: 16px; }
+/* </CLIENTI> */
+
+
+/* <CARDS> */
+
+.card-table { width: 450px; margin: 0 auto; }
+/* .box-btn-new { padding: 20px 0; } */
+.btn-new { width:200px; margin: 20px auto; display: none; }
+.card { margin-top: 20px; }
+/* #cards { margin-top: 20px; } */
+.card th { border-left: none; }
+.th-title { height: 60px; padding: 0; border-top: none; }
+.box-title { height: 100%; position: relative; }
+.title { padding-top: 20px; }
+
+
+.btn-close {
+    width: 25px;
+    height: 25px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    border: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    background-color: var(--col-danger-l);
+}
+
+.btn-close:hover { background-color: var(--col-danger-m); }
+
+.btn-close:active {
+    position: absolute;
+    top: 6px;
+    right: 0;
+}
+/* </BTN-CARDS> */
+
+
+
+/* <INPUTS> */
+.card-input { width: 300px !important; }
+
+.validity {
+    display: inline-block;
+    position: relative;
+    top: 1px;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.8
+}
+
+.card-input:invalid+span:after { content: '\2716'}
+.card-input:valid+span:after { content: '\2714' }
+/* </INPUTS> */
+
+
+.card-table td { width: 400px; height: 50px; }
+
+/* <ADD> */
+.indirizzi-add { display: none }
+.box-title-add { box-shadow: inset 0 6px 0 0 var(--col-success-l) }
+.th-add { width: 100px }
+.btn-card-add { width: 200px; }
+/* </ADD> */
+
+/* <VIEW> */
+.indirizzi-view {display: none}
+.box-title-view { box-shadow: inset 0 6px 0 0 var(--col-primary-l) }
+#map { height: 100% }
+/* </VIEW> */
+
+
+/* <EDIT> */
+.indirizzi-edit { display: none }
+.box-title-edit { box-shadow: inset 0 6px 0 0 var(--col-warning-l) }
+/* .th-edit { width: 100px } */
+.btn-card-update { width: 200px; }
+/* </EDIT> */
+/* </CARDS> */
+
+

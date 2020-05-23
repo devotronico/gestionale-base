@@ -1,0 +1,24 @@
+/* <INPUT_FONT-SIZE> */
+input[type='text'],
+input[type='number'],
+input {
+font-size: 16px;
+}
+/* </INPUT_FONT-SIZE> */
+
+
+
+#test-lib {
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: green;
+}
+
+
+#test-lib > button {
+    margin-top: 30px;
+}

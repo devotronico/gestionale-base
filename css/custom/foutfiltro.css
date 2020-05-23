@@ -1,0 +1,100 @@
+/* <ACCORDION> */
+.accordion-box { margin: 40px 0; }
+.accordion-btn {
+cursor: pointer;
+display: block;
+position: relative;
+width: 300px;
+padding: 4px 0;
+margin: 0 auto;
+}
+
+/* button::after { position: absolute; font-weight: 900; content: "\002B"; right: 5px; line-height: 1.1 } */
+.accordion-btn::after { position: absolute; font-weight: 900; content: "\002B"; right: 5px; line-height: 1.1 }
+.accordion-btn.is-open::after { content: "\2212" }
+.accordion-wrapper {max-height: 600px; transition: max-height 0.1s ease-in-out; background-color: #fff; }
+.accordion-wrapper.is-close { overflow: hidden; max-height: 0; transition: max-height 0.1s ease-in-out }
+/* .accordion-wrapper { overflow: hidden; max-height: 0; transition: max-height 0.1s ease-in-out } */
+/* </ACCORDION> */
+
+
+td, th { padding: 5px 10px; text-align: center; font-size: 12px; }
+
+/* <FILTER-TABLE> */
+.filter-table { padding: 24px !important; border: 1px solid rgba(0,0,0,.3); }
+.filter-td > input, .filter-td > select { padding: 4px 10px; width: 300px; font-size: 13px; }
+.filter-td > select { width: 300px; }
+.filter-td > input { width: 150px; }
+.filter-th { padding: 0; }
+.filter-td { padding: 0px 15px 15px; }
+/* </FILTER-TABLE> */
+
+
+/* <LIST-TABLE> */
+.list-table { border-collapse: collapse; }
+.list-thead { background-color: #112233; }
+.list-tr:nth-child(even) {background: #eee}
+.list-tr:nth-child(odd) {background: #fff}
+.list-tr:hover { background-color: #ffff99; }
+
+.list-th, .list-td {
+	padding: 6px 8px;
+	border: 1px solid rgba(0,0,0,.3);
+	font-size: 11px;
+	text-align: center;
+}
+
+.list-td.prodotti {
+	background: #ffff99;
+}
+
+.list-th { font-weight: bold; color: white; background-color: var(--col-secondary-l); }
+
+/* <BTN-LIST> */
+.btn-list { cursor: pointer; text-align: center; background: #112233; }
+.btn-list a { color: #fff; text-decoration: none; font-size: 15px; }
+/* </BTN-LIST> */
+
+/* <LIST-TABLE-PRODUCT> */
+.list-th.prodotti { background-color: var(--col-secondary-l); }
+/* </LIST-TABLE-PRODUCT> */
+
+/* <PAGINATOR> */
+.pagination { margin: 20px;  }
+.pagination li { display: inline;  }
+.pagination li a, .pagination .disabled { padding: 6px 10px; margin: 0px 5px; border: 1px solid rgba(0,0,0,.2); background-color: #fff;}
+.pagination li a { text-decoration: none; color: var(--col-primary-l); }
+.pagination .disabled { color: #CCC; }
+.pagination .actual-page, .pagination li a:hover { background-color: var(--col-primary-l); color: #FFF; }
+li.actual-page.disabled { background-color: var(--col-primary-d); color: #eee; }
+/* </PAGINATOR> */
+/* </LIST-TABLE> */
+
+
+.totali td { background-color: #fff; }
+
+.list-table.align-right { float: right; display: block; background: var(--col-secondary-l); }
+
+.reset {
+	clear: both;
+	margin-bottom: 30px;
+}
+
+/* <PRINT> */
+@media print {
+.no-print {display: none;}
+tr { page-break-inside: avoid; page-break-after: auto; }
+thead { display: table-header-group; }
+th {
+background: white;
+color: black;
+font-size: 11px;
+font-style: bold;
+}
+td {
+background: white;
+color: black;
+font-size: 11px;
+}
+}
+/* </PRINT> */

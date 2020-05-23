@@ -1,0 +1,482 @@
+@media(min-width:1px) {
+#core {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: silver;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+.wrapper > .section {
+  width: 100%;
+}
+
+
+  /* <WRAPPER> */
+  .wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .wrapper > .section {
+    background-color: #ececec;
+  }
+  /* </WRAPPER> */
+
+/* <TABELLE> */
+table {
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 6px 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+}
+
+th {
+  background: #343a40;
+  color: #fff;
+  font-weight: normal;
+}
+/* </TABELLE> */
+
+/* </GENERAL> */
+
+/* <CLIENTI> */
+#clienti-table th {
+  width: 70px;
+}
+
+#clienti-table td {
+  text-align: center;
+}
+
+.selectr-container {
+  width: 90%;
+  margin: 0 auto;
+}
+/* </CLIENTI> */
+
+/* <BTN_MODE> */
+#ordine-mode {
+  display: none;
+}
+
+#box-btn-mode {
+  display: flex;
+}
+#btn-mode-add,
+#btn-mode-list {
+  width: 50%;
+}
+/* </BTN_MODE> */
+
+/* <MESSAGE> */
+#message {
+  margin: 0;
+}
+
+#message-success {
+  border-top: 8px solid var(--col-success-l);
+}
+#message-danger {
+  border-top: 8px solid var(--col-danger-l);
+}
+
+#message-table {
+  width: 100%;
+}
+
+#message-table thead th {
+  padding: 0;
+}
+
+#message-head {
+  display: flex;
+}
+
+#message-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  flex-grow: 2;
+}
+
+.box-btn-close {
+  position: relative;
+}
+
+.btn-close {
+  width: 50px;
+  height: 40px;
+}
+/* </MESSAGE> */
+
+/* <NEW-ORDINI> */
+#ordine-new {
+  display: none;
+}
+
+#ordine-new_table {
+  text-align: center;
+  box-shadow: 0 -10px 0 var(--col-success-l);
+}
+
+#ordine-new_table th {
+  width: 120px;
+  padding: 8px 0;
+}
+#ordine-new_table td {
+  width: 200px;
+  padding: 8px 0;
+}
+
+#ordine-new_table input {
+  width: 85%;
+}
+
+#ordine-new_table select {
+  width: 80%;
+}
+
+#btn-add-ordine {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+}
+
+#btn-new {
+  width: 200px;
+  margin: 0 auto;
+  display: none;
+}
+/* </NEW-ORDINI> */
+
+/* <ORDINI-ROWS> */
+#ordini {
+  display: none;
+}
+
+
+#ordine-title {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#ordini-table {
+  box-shadow: 0 -10px 0 var(--col-primary-l);
+}
+
+#ordini-table th,
+#ordini-table td {
+  /* font-size: 12px; */
+  border: none;
+}
+
+.list-tr:hover {
+  background-color: #fff;
+}
+
+.list-tr.active-row {
+  background-color: #ffff99;
+}
+
+.list-tr > th:nth-of-type(1),
+.list-tr > th:nth-of-type(2),
+.list-tr > td:nth-of-type(1),
+.list-tr > td:nth-of-type(2) {
+  width: 120px;
+  border-right: 1px dashed rgba(0, 0, 0, 0.1) !important;
+}
+
+.list-tr > th:nth-of-type(3),
+.list-tr > td:nth-of-type(3) {
+  width: 80px;
+}
+
+.list-td {
+  padding: 0;
+  height: 40px;
+}
+
+.list-text {
+  margin-left: 6px;
+  cursor: default
+}
+
+
+/* </ORDINI-ROWS> */
+
+/* <CARDS> */
+#card-row {
+  width: 100%;
+}
+
+#td-card-container {
+  padding: 0 !important;
+}
+
+#card-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#card-wrapper {
+  width: 100%;
+}
+
+/* <TAB-BUTTON> */
+#box-btn-tab {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  display: flex;
+}
+
+#box-btn-tab > button {
+  flex-grow:  1;
+}
+
+.btn-tab:focus {
+  outline: none;
+}
+
+#btn-close {
+  font-weight: bold;
+  opacity: 0.6;
+  color: red;
+}
+/* </TAB-BUTTON> */
+
+/* <CARD_PANEL> */
+#cards {
+  width: 100%;
+}
+
+.panel {
+  width: 100%;
+  display: none;
+  height: 100%;
+  background-color: #fff;
+}
+
+.panel.active {
+  display: block;
+  padding: 10px 0;
+}
+
+#panel-view {
+  background-color: var(--col-primary-l);
+}
+#panel-edit {
+  background-color: var(--col-warning-l);
+}
+#panel-canc {
+  background-color: var(--col-danger-l);
+}
+
+.panel_row {
+  background-color: #fff;
+}
+
+.panel_table th {
+  border-left: none;
+  border-bottom: none !important;
+}
+
+
+/* <PANEL_VIEW> */
+#panel_table-view {
+  width: 100%;
+}
+
+
+#panel_table-view th {
+  text-align: left;
+}
+
+#panel_table-view th,
+#panel_table-view td {
+  padding-left: 8px;
+  padding-right: 0 ;
+}
+
+#panel_table-view > thead th:nth-of-type(1) {
+  width: 15%;
+}
+#panel_table-view > thead th:nth-of-type(2) {
+  width: 20%;
+}
+#panel_table-view > thead th:nth-of-type(3) {
+  width: 10%;
+}
+#panel_table-view > thead th:nth-of-type(4) {
+  width: 20%;
+}
+#panel_table-view > thead th:nth-of-type(5) {
+  width: 15%;
+}
+#panel_table-view > thead th:nth-of-type(6) {
+  width: 20%;
+}
+
+#panel_table-view > tbody > tr:nth-of-type(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+/* </PANEL_VIEW> */
+
+/* <PANEL_EDIT> */
+#panel_table-edit {
+width: 100%;
+}
+
+
+#panel_table-edit > tbody > tr > th {
+padding: 0;
+width: 20%;
+height: 40px;
+}
+#panel_table-edit > tbody > tr > td {
+padding: 0;
+width: 80%;
+height: 40px;
+}
+
+#edit-date-ordine, #edit-date-ritiro, #edit-stato-ordine  {
+margin-left: 8px;
+}
+
+#edit-stato-ordine > option {
+padding: 10px 0;
+width: 100px;
+text-align: center;
+}
+
+/* </PANEL_EDIT> */
+#panel-canc p {
+  padding: 10px;
+  text-align: center;
+}
+
+#btn_panel-view,
+#btn_panel-update,
+#btn_panel-delete {
+  display: block;
+  width: 120px;
+  margin: 0 auto;
+}
+#btn_panel-view,
+#btn_panel-update {
+  margin-top: 10px;
+}
+}
+/* </CARD_PANEL> */
+
+/********** IPHONE 6/7/8 X **********/
+/*
+@media(min-width:375px) {
+  #core {
+    width: 375px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width: 375px;
+  }
+
+  .wrapper > .section {
+    width: 375px;
+  }
+}
+*/
+/********** IPHONE 6/7/8 PLUS **********/
+/*
+@media(min-width:411px) {
+  #core {
+    width: 411px;
+  }
+
+  .wrapper {
+    width: 411px;
+  }
+
+  .wrapper > .section {
+    width: 411px;
+  }
+}
+
+
+@media(min-width:414px) {
+  #core {
+    width: 414px;
+  }
+
+  .wrapper {
+    width: 414px;
+  }
+
+  .wrapper > .section {
+    width: 414px;
+  }
+}
+
+@media(min-width:768px) {
+  #core {
+    width: 768px;
+  }
+
+  .wrapper {
+    width: 768px;
+  }
+
+  .wrapper > .section {
+    width: 768px;
+  }
+}
+
+*/
+@media(min-width:1024px) {
+  #core {
+    width: 1024px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    width: 1024px;
+  }
+
+  .wrapper > .section {
+    width: 1024px;
+  }
+}
+
+@media(min-width:1200px) {
+
+* {
+font-size: 16px !important;
+}
+
+  #core {
+    width: 1024px;
+  }
+
+  .wrapper {
+    width: 1024px;
+  }
+
+  .wrapper > .section {
+    width: 1024px;
+  }
+}

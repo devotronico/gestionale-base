@@ -1,0 +1,3 @@
+Errore : expected '>'
+Linea: 299  Colonna: 4479Errore : Opening and ending tag mismatch: FatturaElettronica line 1 and FatturaElettroni
+Linea: 299  Colonna: 4479
